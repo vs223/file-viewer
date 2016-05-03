@@ -2,17 +2,8 @@ import * as React from 'react';
 import Connection from './connection.ts';
 import File from './file.tsx';
 import FileInfo from './file-info.tsx';
-import { Col, Input } from 'react-bootstrap';
-
-class Path extends React.Component<{}, {}> {
-  constructor(props: {}) {
-    super(props);
-  }
-
-  public render(): JSX.Element {
-    return <Input type='text' value={this.props.children} readOnly />;
-  }
-}
+import Path from './path.tsx';
+import { Col } from 'react-bootstrap';
 
 interface IProps {
   connection: Connection;
